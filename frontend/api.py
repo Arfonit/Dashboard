@@ -1,8 +1,9 @@
 import requests
 from uuid import UUID
+from backend.config import settings
 
 
-base_url = "http://127.0.0.1:8000"
+base_url = settings.API_URL
 
 class APIClient:
 

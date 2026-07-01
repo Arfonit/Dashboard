@@ -15,5 +15,6 @@ class Settings:
 
     DB_SCHEMA =os.getenv('DB_SCHEMA')
     
+    API_URL = os.getenv('API_URL')
     
 settings = Settings()
