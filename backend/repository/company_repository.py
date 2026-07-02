@@ -1,5 +1,5 @@
 from sqlalchemy import  text
-from backend.schemas.company_schemas import (CompanyNameUpdate)
+from schemas.company_schemas import (CompanyNameUpdate)
 from uuid import UUID
 from config import settings
     

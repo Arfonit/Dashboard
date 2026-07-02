@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from uuid import UUID
-from backend.schemas.project_schemas import (Project,
+from schemas.project_schemas import (Project,
                                              StartProjectDateUpdate,
                                              ProjectTypeUpdate)
 from services.project_service import (get_all_project_types_service,

@@ -1,7 +1,7 @@
 from db import SessionLocal
 from logger import logger
 from uuid import UUID, uuid4
-from backend.schemas.comment_schemas import (CommentUpdate)
+from schemas.comment_schemas import (CommentUpdate)
 from repository.dashboard_repository import (refresh_dashboard_repository)
 from repository.comment_repository import (get_comment_repository,
                                            insert_comment_repository,

@@ -1,6 +1,6 @@
 from api import api
 import streamlit as st
-from frontend.Forms import edit_form, new_project_form
+from Forms import edit_form, new_project_form
 import pandas as pd
 import time
 

@@ -1,5 +1,5 @@
 from sqlalchemy import  text
-from backend.schemas.payment_schemas import (FactPaymentUpdate)
+from schemas.payment_schemas import (FactPaymentUpdate)
 from uuid import UUID
 from config import settings
     

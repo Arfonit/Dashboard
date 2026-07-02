@@ -1,5 +1,5 @@
 from sqlalchemy import  text
-from backend.schemas.project_schemas import (StartProjectDateUpdate,
+from schemas.project_schemas import (StartProjectDateUpdate,
                                             ProjectTypeUpdate,
                                             KeyTable)
 from uuid import UUID

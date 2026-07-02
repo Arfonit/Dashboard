@@ -11,3 +11,8 @@ fastApi_env/
 .vscode/
 
 *.log
+
+Include/
+Lib/
+Scripts/
+pyvenv.cfg

@@ -1,7 +1,7 @@
 from db import SessionLocal
 from logger import logger
 from uuid import UUID, uuid4
-from backend.schemas.payment_schemas import (FactPaymentUpdate)
+from schemas.payment_schemas import (FactPaymentUpdate)
 from repository.dashboard_repository import (refresh_dashboard_repository)
 from repository.payment_repository import (get_fact_payment_repository,
                                            insert_fact_payment_repository,

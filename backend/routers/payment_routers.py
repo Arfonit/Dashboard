@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from uuid import UUID
-from backend.schemas.payment_schemas import (FactPaymentUpdate)
+from schemas.payment_schemas import (FactPaymentUpdate)
 from services.payment_service import (get_fact_payment_service,
                                       insert_fact_payment_service,
                                       delete_fact_payment_service,

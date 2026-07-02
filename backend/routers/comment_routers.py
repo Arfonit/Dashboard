@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from uuid import UUID
-from backend.schemas.comment_schemas import (CommentUpdate)
+from schemas.comment_schemas import (CommentUpdate)
 from services.comment_service import (insert_comment_service,
                                       get_comment_service,
                                       delete_comment_service)

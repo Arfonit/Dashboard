@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from uuid import UUID
-from backend.schemas.company_schemas import (CompanyNameUpdate)
+from schemas.company_schemas import (CompanyNameUpdate)
 from services.company_service import (get_company_name_service,
                                       insert_company_name_service,
                                       delete_company_name_service,

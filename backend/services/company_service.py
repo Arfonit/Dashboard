@@ -1,7 +1,7 @@
 from db import SessionLocal
 from logger import logger
 from uuid import UUID, uuid4
-from backend.schemas.company_schemas import (CompanyNameUpdate)
+from schemas.company_schemas import (CompanyNameUpdate)
 from repository.dashboard_repository import (refresh_dashboard_repository)
 from repository.company_repository import (get_company_name_repository,
                                            insert_company_name_repository,

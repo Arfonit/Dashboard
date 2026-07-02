@@ -1,5 +1,5 @@
 from sqlalchemy import  text
-from backend.schemas.income_schemas import (IncomeCreate, 
+from schemas.income_schemas import (IncomeCreate, 
                                             FixPaymentUpdate,
                                             HourlyPaymentUpdate
                                             )

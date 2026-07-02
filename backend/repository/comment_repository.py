@@ -1,5 +1,5 @@
 from sqlalchemy import  text
-from backend.schemas.comment_schemas import (CommentUpdate)
+from schemas.comment_schemas import (CommentUpdate)
 from uuid import UUID
 from config import settings
     
