@@ -1,6 +1,6 @@
 import requests
 from uuid import UUID
-from backend.config import settings
+from config import settings
 
 
 base_url = settings.API_URL
