@@ -1,36 +1,20 @@
 services:
 
-  postgres:
-    image: postgres:15
-    container_name: postgres
-    environment:
-      POSTGRES_USER: ${DB_USER}
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
-      POSTGRES_DB: ${DB_NAME}
-    ports:
-      - "5432:5432"
-    volumes:
-      - pgdata:/var/lib/postgresql/data
-    networks:
-      - appnet
-
   backend:
     build: ./backend
     container_name: fastapi
     environment:
-      DB_HOST: postgres
+      DB_HOST: postgres15
       DB_PORT: 5432
       DB_NAME: ${DB_NAME}
       DB_USER: ${DB_USER}
       DB_PASSWORD: ${DB_PASSWORD}
       DB_SCHEMA: ${DB_SCHEMA}
-      DATABASE_URL: postgresql+asyncpg://${DB_USER}:${DB_PASSWORD}@postgres:5432/${DB_NAME}
+      DATABASE_URL: postgresql+asyncpg://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
     ports:
       - "8000:8000"
-    depends_on:
-      - postgres
     networks:
-      - appnet
+      - dashboard_app-network
 
   frontend:
     build: ./frontend
@@ -42,10 +26,8 @@ services:
     depends_on:
       - backend
     networks:
-      - appnet
-
-volumes:
-  pgdata:
+      - dashboard_app-network
 
 networks:
-  appnet:
+  dashboard_app-network:
+    external: true
